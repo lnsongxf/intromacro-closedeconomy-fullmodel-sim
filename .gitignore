@@ -1,0 +1,6 @@
+__pycache__/
+submodules/
+temp/
+showclass*
+!showclass.tex
+!showclass.py
