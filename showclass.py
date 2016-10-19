@@ -41,5 +41,5 @@ def importattr(filename, function, fullmodulesloaded = fullmodulesloaded, curfil
 # PYTHON_PREAMBLE_END:}}}
 
 old = importattr(__projectdir__ + 'sim.py', 'defaultsdictgen')()
-new = importattr(__projectdir__ + 'sim.py', 'multipleofdefaults')({'G': 1.05})
+new = importattr(__projectdir__ + 'sim.py', 'multipleofdefaults')({'T': 1.01})
 importattr(__projectdir__ + 'sim.py', 'allmodels')(old, after = new, savedir = __projectdir__ + 'temp/showclass/')
