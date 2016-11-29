@@ -32,11 +32,11 @@ if 'fullmodulesloaded' not in globals():
 sys.path.append(__projectdir__ + 'submodules/python-preamble/')
 from importattr2 import importattr2
 
-def importattr(filename, function, fullmodulesloaded = fullmodulesloaded, curfilename = __fullrealfile__, tryimport = True):
+def importattr(filename, function, fullmodulesloaded = fullmodulesloaded, curfilename = __fullrealfile__, bybasename = False):
     if os.path.abspath(filename) == curfilename:
         func = eval(function)
     else:
-        func = importattr2(filename, function, fullmodulesloaded, tryimport = tryimport)
+        func = importattr2(filename, function, fullmodulesloaded, bybasename = bybasename)
     return(func)
 
 # PYTHON_PREAMBLE_END:}}}
